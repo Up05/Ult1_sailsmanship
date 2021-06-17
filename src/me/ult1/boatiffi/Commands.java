@@ -71,7 +71,8 @@ public class Commands implements CommandExecutor {
                                 "\nI beaoutiful command list: "                         + ChatColor.GOLD   +
                                 "\nI ulti_boat_spawn - Sets the first boat's location," +
                                 "\nI ulti_boat_motion - Sets every boat's motion,"      +
-                                "\nI ulti_boat_help - Gets player this message."        +
+                                "\nI ulti_boat_help - Gets player this message,"        +
+                                "\nI Ulti_boat_playerspawn - Sets the player's spawn."  +
                                 "\n-------------------------------------------"
                             );
                 }
