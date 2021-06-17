@@ -73,13 +73,13 @@ public class Readability0 implements Listener {
                 } else if (boatMotionZ > 0) {
                     yaw = -180;
                 }
-            } // calculates yaw, ya can close this with your editor of choice.
+            }
 
 
-            for(Entity ent : Bukkit.getWorld(u_map).getEntities()){
+            for(Entity ent : Bukkit.getWorld(u_map).getNearbyEntities(p.getLocation(), 6, 4, 6)){
                 if(ent.getType().equals(EntityType.BOAT)) {
                     ent.eject();
-                    ent.remove(); // I'm sure this won't cause any problems... NAH!
+                    ent.remove();
                 }
             }
             Location loc = new Location(Bukkit.getWorld(u_map), spawnPointX, spawnPointY, spawnPointZ, yaw, 0);
@@ -182,7 +182,7 @@ public class Readability0 implements Listener {
                 for(Entity ent : Bukkit.getWorld(u_map).getEntities()){
                     if(ent.getType().equals(EntityType.BOAT)) {
                         ent.eject();
-                        ent.remove(); // I'm sure this won't cause any problems... NAH!
+                        ent.remove();
                     }
                 }
 
