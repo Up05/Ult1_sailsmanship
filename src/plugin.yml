@@ -1,16 +1,21 @@
 name: Boatiful_Plugin
-version: 1.6
+version: 1.7
 author: Ult1
 main: me.ult1.boatiffi.BoatC
 api-version: 1.12.2
 commands:
     ulti_boat_spawn:
       description:  set's the respawn point where ever the the player execute "ultisetMapRespawnPoint" is standing in any map of the boatiffi gamemode.
-      usage: /command
-      aliases: ub_spawn
+      usage: /command <x> <y> <z>
+      aliases: ubbspawn
     ulti_boat_motion:
       description: set's the boats motion, this command is just for the direction the boat is travelling in X X- Z Z- players go thru boats travelling up and idk about down just remember that you can't jump mid-air.
       usage: /command <x> <y> <z>
-      aliases: ub_motion
+      aliases: ubbmotion
     ulti_boat_help:
       description: help command
+      usage: /command
+    ulti_boat_playerspawn:
+      description: sets player's teleport spot when they fall into water or finish
+      usage: /command <x> <y> <z>
+      aliases: ubpspawn

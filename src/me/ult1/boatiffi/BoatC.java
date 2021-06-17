@@ -1,13 +1,10 @@
 package me.ult1.boatiffi;
 
 import org.bukkit.ChatColor;
-import org.bukkit.command.Command;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class BoatC extends JavaPlugin {
-    // I'll be referring to boatC as the main name of this thing in code
-
-
+    // I'll be referring to boatC as the boantiful name of this thing in code
 
     @Override
     public void onEnable() {
@@ -21,11 +18,3 @@ public class BoatC extends JavaPlugin {
     }
 
 }
-
-
-
-
-
-// boat ain't dying
-// will have to remove the sendMessage() here ^
-// config and playerSpawn command

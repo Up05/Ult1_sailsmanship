@@ -28,8 +28,8 @@ public class Commands implements CommandExecutor {
                         commandSender.sendMessage("set boat spawn point");
                     } else {
                         double[] t = r.getBoatSpawnCoords();
-                        commandSender.sendMessage("/ulti_boat_spawn <x> <y> <z>");
-                        commandSender.sendMessage("Current location: " + t[0] + ", " + t[1] + ", " + t[2]);
+                        commandSender.sendMessage(ChatColor.GOLD + "/ulti_boat_spawn <x> <y> <z>");
+                        commandSender.sendMessage(ChatColor.ITALIC + "Current location: " + t[0] + ", " + t[1] + ", " + t[2]);
                     }
                 }
 
@@ -41,8 +41,8 @@ public class Commands implements CommandExecutor {
                     commandSender.sendMessage("set player spawn point");
                 } else {
                     double[] t = r.getPlayerRespawnCoords();
-                    commandSender.sendMessage("/ulti_boat_playerspawn <x> <y> <z>");
-                    commandSender.sendMessage("Current location: " + t[0] + ", " + t[1] + ", " + t[2]);
+                    commandSender.sendMessage(ChatColor.GOLD + "/ulti_boat_playerspawn <x> <y> <z>");
+                    commandSender.sendMessage(ChatColor.ITALIC + "Current location: " + t[0] + ", " + t[1] + ", " + t[2]);
                 }
             }
 
@@ -55,8 +55,8 @@ public class Commands implements CommandExecutor {
                     commandSender.sendMessage("set boat spawn point");
                 } else {
                     double[] t = r.getBoatMotion();
-                    commandSender.sendMessage("/ulti_boat_motion <x> <y> <z>");
-                    commandSender.sendMessage("Current boat motion: " + t[0] + ", " + t[1] + ", " + t[2]);
+                    commandSender.sendMessage(ChatColor.GOLD + "/ulti_boat_motion <x> <y> <z>");
+                    commandSender.sendMessage(ChatColor.ITALIC + "Current boat motion: " + t[0] + ", " + t[1] + ", " + t[2]);
                 }
             }
 
@@ -68,7 +68,7 @@ public class Commands implements CommandExecutor {
                              "  -------------------------------------------"         + ChatColor.ITALIC + ChatColor.YELLOW +
                                 "\nI This is mostly for new custom maps and staff,"     +
                                 "\nI all my commands are prefixed with: "               + ChatColor.GREEN  + "ulti_<plugin>_"+ChatColor.WHITE+
-                                "\nI beaotiful command list: "                          + ChatColor.GOLD   +
+                                "\nI beaoutiful command list: "                         + ChatColor.GOLD   +
                                 "\nI ulti_boat_spawn - Sets the first boat's location," +
                                 "\nI ulti_boat_motion - Sets every boat's motion,"      +
                                 "\nI ulti_boat_help - Gets player this message."        +
